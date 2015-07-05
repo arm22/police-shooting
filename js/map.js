@@ -15,7 +15,7 @@ var drawMap = function() {
 // Function for getting data
 var getData = function(map) {
 	$.ajax({
-	    url:'../data/response.json',
+	    url:'./data/response.json',
 	        type: "get",
 		    success: function(dat){
 		    	customBuild(dat, map);
