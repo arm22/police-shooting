@@ -1,5 +1,9 @@
 /* You'll probably want to add some styles here */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
 body {
+	font-family: 'PT Sans', sans;
+	background-color: #6C7A89;
 	text-align: center;
 }
 
