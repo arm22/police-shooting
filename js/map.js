@@ -26,13 +26,28 @@ var getData = function(map) {
 
 // Do something creative with the data here!  
 var customBuild = function(data, map) {
+	var circle;
 	console.log(data);
 	data.map(function(d) {
 		if (d["Victim's Gender"] == "Male") {
-			var circle = new L.circle([d.lat, d.lng], 100, {color:'#4B77BE', opacity:.7}).addTo(map);
+			circle = new L.circle([d.lat, d.lng], 200, {color:'#4B77BE', opacity:.7});
 		} else if (d["Victim's Gender"] == "Female") {
-			var circle = new L.circle([d.lat, d.lng], 100, {color:'#D2527F', opacity:.7}).addTo(map);
+			circle = new L.circle([d.lat, d.lng], 200, {color:'#F62459', opacity:.7});
 		}
+		var text = "";
+		if (d["Armed or Unarmed?"] != undefined) {
+			text += "<b>Armed/Unarmed:</b> " + d["Armed or Unarmed?"] + "<br>";
+		};
+		if (d["Hit or Killed?"] != undefined) {
+			text += "<b>Hit/Killed:</b> " + d["Hit or Killed?"] + "<br>";
+		};
+		if (d["Shots Fired"] != undefined) {
+			text += "<b>Shots Fired:</b> " + d["Shots Fired"] + "<br>";
+		};
+		if (text != "") {
+			circle.bindPopup(text);
+		}
+		circle.addTo(map);
 	});
   
 }

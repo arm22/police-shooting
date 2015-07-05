@@ -3,17 +3,36 @@
 
 body {
 	font-family: 'PT Sans', sans;
-	background-color: #6C7A89;
+	background-color: #22313F;
 	text-align: center;
+	background-image: url("../img/coplights.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 
-#map {
+#map-cont {
 	margin: auto;
-	margin-top: auto;
+	margin-top: 20px;
+	border-radius: 4px;
+	background-color: #446CB3;
+	padding: 15px;
 }
 
 .container-fluid {
 	margin-top: auto;
 	margin-bottom: auto;
+}
+
+#header {
+	background-color: #446CB3;
+	font-size: 50pt;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+
+h3 {
+	font-size: 25pt;
+	color: #D2D7D3;
 }
