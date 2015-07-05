@@ -27,25 +27,13 @@ var getData = function(map) {
 // Do something creative with the data here!  
 var customBuild = function(data, map) {
 	L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
-	var spec;
 	console.log(data);
 	data.map(function(d) {
 		if (d["Victim's Gender"] == "Male") {
-			 // Creates a blue marker with the coffee icon
-				spec = L.AwesomeMarkers.icon({
-				icon: 'male',
-				markerColor: 'blue'
-			});
-
+			var circle = new L.circle([d.lat, d.lng], 100, {color:'#34495E', opacity:.7}).addTo(map);
 		} else if (d["Victim's Gender"] == "Female") {
-			// Creates a pink marker with the coffee icon
-				spec = L.AwesomeMarkers.icon({
-				icon: 'female',
-				markerColor: 'pink'
-			});	
+			var circle = new L.circle([d.lat, d.lng], 100, {color:'#D2527F', opacity:.7}).addTo(map);
 		}
-		var marker = new L.marker([d.lat, d.lng], {icon: spec}).addTo(map);
-		marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 	});
   
 }

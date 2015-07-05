@@ -1,4 +1,8 @@
 /* You'll probably want to add some styles here */
+body {
+	text-align: center;
+}
+
 
 #map {
 	margin: auto;
