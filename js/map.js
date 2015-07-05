@@ -5,7 +5,7 @@ var drawMap = function() {
 	var map = L.map('container');
 	map.setView([34,-100],4);
   // Create an tile layer variable using the appropriate url
-	var layer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
+	var layer = L.tileLayer('https://{s}.tiles.mapbox.com/v4/mapbox.light/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoiYXJtMjA2IiwiYSI6IjJlMjQ1NWRlOTIyY2Q0MmMwMTE5ZWFmNTgyOTI5NjhkIn0.Avm6VjzhgLYy-YOsv61aCQ');
   // Add the layer to your map
  	layer.addTo(map);
   // Execute your function to get data
