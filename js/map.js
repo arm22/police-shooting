@@ -26,7 +26,6 @@ var getData = function(map) {
 
 // Do something creative with the data here!  
 var customBuild = function(data, map) {
-	console.log(data);
 	data.map(function(d){
 		var circle = new L.circle([d.lat, d.lng], 200, {color:'red', opacity:.5}).addTo(map)
 	});
