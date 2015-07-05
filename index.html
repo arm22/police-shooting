@@ -1,23 +1,39 @@
 <!doctype html>
 
 <html>
-  <head>
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    <title>Police Shootings</title>
-    <!-- Get the leaflet.js library and stylesheet -->
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="shortcut icon" href="img/map-marker.png">
-  </head>
+	<head>
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<title>Police Shootings</title>
+		<!-- Get the leaflet.js library and stylesheet -->
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+		<!-- Font Awesome Icons -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<!-- Leaflet Awesome Markers -->
 
-  <body>
-    <div id="container" style="width:500px; height:500px;"></div>
-    <script>
-      
-    	// This is where you should execute your drawMap function // 
-      drawMap();
-    </script>
-  </body>
+		<script src="js/leaflet.awesome-markers.js"></script>
+		<link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="shortcut icon" href="img/map-marker.png">
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div id="map" style="height:500px;">
+						<script>
+						// This is where you should execute your drawMap function // 
+						drawMap();
+						</script>
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+			</div>
+		</div>
+	</body>
 </html>

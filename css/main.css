@@ -1,1 +1,11 @@
 /* You'll probably want to add some styles here */
+
+#map {
+	margin: auto;
+	margin-top: auto;
+}
+
+.container-fluid {
+	margin-top: auto;
+	margin-bottom: auto;
+}
