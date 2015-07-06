@@ -27,12 +27,31 @@ body {
 
 #header {
 	background-color: #446CB3;
-	font-size: 50pt;
 	border-radius: 4px;
 	margin-top: 15px;
 }
 
 h3 {
 	font-size: 25pt;
+	color: #D2D7D3;
+}
+
+#context {
+	background-color: #446CB3;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #D2D7D3;
+}
+
+p {
+	padding-top: 10px;
+}
+a:link, a:visited {
+	color: #D2D7D3;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
 	color: #D2D7D3;
 }
